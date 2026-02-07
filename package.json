@@ -16,5 +16,12 @@
     "cypress": "^15.10.0",
     "esbuild": "^0.27.3",
     "mochawesome": "^7.1.4"
-  }
+  },
+  "cypress-cucumber-preprocessor": {
+  "nonGlobalStepDefinitions": false,
+  "stepDefinitions": [
+    "cypress/e2e/step_definitions/**/*.js",
+    "cypress/e2e/step_definitions/**/*.ts"
+  ]
+}
 }
