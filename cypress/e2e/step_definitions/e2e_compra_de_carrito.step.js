@@ -14,14 +14,14 @@ Given('el usuario navega a la página principal', () => {
 
 When('el usuario ingresa con las credenciales correctas del rol {string}', (rol) => {
   cy.env([rol]).then((envValues) => {
-    const userCredentials = envValues[rol];
+    const userCredentials = envValues[rol]
 
     if (!userCredentials) {
-      throw new Error(`No se encontraron credenciales para el rol "${rol}"`);
+      throw new Error(`No se encontraron credenciales para el rol "${rol}"`)
     }
 
-    LoginPage.login(userCredentials.user, userCredentials.password);
-  });
+    LoginPage.login(userCredentials.user, userCredentials.password)
+  })
 })
 
 Then('ingresa correctamente al sistema', () => {

@@ -1,4 +1,4 @@
-const report = require('multiple-cucumber-html-reporter');
+const report = require('multiple-cucumber-html-reporter')
 
 report.generate({
   jsonDir: 'cypress/reports',
@@ -16,4 +16,4 @@ report.generate({
       { label: 'Fecha', value: new Date().toLocaleString() }
     ]
   }
-});
+})
