@@ -1,4 +1,4 @@
-const BASE_URL = 'https://fakestoreapi.com/auth';
+const BASE_URL = 'https://fakestoreapi.com/auth'
 
 const request = ({ method, endpoint, body = null, failOnStatusCode = true }) => {
   return cy.request({
@@ -6,7 +6,7 @@ const request = ({ method, endpoint, body = null, failOnStatusCode = true }) => 
     url: `${BASE_URL}${endpoint}`,
     body,
     failOnStatusCode,
-  });
-};
+  })
+}
 
-export const login = (body, failOnStatusCode = true) => request({ method: 'POST', endpoint: '/login', body, failOnStatusCode });
+export const login = (body, failOnStatusCode = true) => request({ method: 'POST', endpoint: '/login', body, failOnStatusCode })

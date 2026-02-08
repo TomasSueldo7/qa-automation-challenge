@@ -4,24 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run",
+    "cy:run:web": "npx cypress run --spec \"cypress/e2e/features/web/*.feature\"",
+    "cy:run:api": "npx cypress run --spec \"cypress/e2e/features/api/*.feature\"",
+    "report": "node generate-cucumber-report.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/jsonLogs.json"
+    },
+    "stepDefinitions": [
+      "cypress/e2e/step_definitions/*.js",
+      "cypress/e2e/step_definitions/*.ts"
+    ]
+  },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
     "cypress": "^15.10.0",
     "esbuild": "^0.27.3",
-    "mochawesome": "^7.1.4"
-  },
-  "cypress-cucumber-preprocessor": {
-  "nonGlobalStepDefinitions": false,
-  "stepDefinitions": [
-    "cypress/e2e/step_definitions/**/*.js",
-    "cypress/e2e/step_definitions/**/*.ts"
-  ]
-}
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  }
 }
