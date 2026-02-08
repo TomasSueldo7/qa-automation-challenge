@@ -4,7 +4,7 @@ import InventoryPage from '../../pages/Inventory.page.js'
 import CartPage from '../../pages/Cart.page.js'
 import CheckoutOverviewPage from '../../pages/CheckoutOverview.page.js'
 import CheckoutInformationPage from '../../pages/CheckoutInformation.page.js'
-import Product from '../../models/Product.model.js'
+import Product from '../../models/product.model.js'
 
 let selectedProducts = []
 
