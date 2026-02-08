@@ -6,7 +6,7 @@ La naturaleza de este proyecto es que se pueda visualizar como quedaria un proye
 
 - Se sube el Cypress.env.json con las credenciales de los usuarios de prueba. En caso de avanzar se debe agregar el archivo al .gitignore
 - Se sube la carpeta de reports con una ejecución compleja luego de haber corrido multiple-cucumber-html-reporter para que se pueda visualizar el reporte. En caso de avanzar se debe agregar el archivo al .gitignore
-- La arquitectura del proyecto esta basada en el patrón POM para las pruebas de frontend y MCV para las pruebas de API. En la práctica, estas arquitecturas deberían ir separadas de acuerdo con lo que se va a testear. En este caso, como se esta haciendo un desafío técnico, se opto por una arquitectura unificada para simplificar el proyecto.
+- La arquitectura del proyecto esta basada en el patrón POM para las pruebas de frontend y MVC para las pruebas de API. En la práctica, estas arquitecturas deberían ir separadas de acuerdo con lo que se va a testear. En este caso, como se esta haciendo un desafío técnico, se opto por una arquitectura unificada para simplificar el proyecto.
 
 ## Descripción Breve
 
